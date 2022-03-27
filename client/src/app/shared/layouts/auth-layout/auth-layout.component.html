@@ -1,9 +1,14 @@
 <nav>
-    <div class="nav-wrapper grey darken-1">
-        <a href="#" class="brand-logo">ITransistion</a>
+    <div class="nav-wrapper blue light-blue">
+        <a routerLink="/" class="brand-logo">ITransistion</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a>Вход</a></li>
-            <li><a>Регистрация</a></li>
+            <li routerLinkActive="active">
+                <!-- Url match with current page -->
+                <a routerLink="login">Вход</a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink="register">Регистрация</a>
+            </li>
         </ul>
     </div>
 </nav>
