@@ -10,7 +10,9 @@ export class AuthService {
 
     private token = ''
 
-    register() {}
+    register(user: User): Observable<User> {
+        return this.http.post<User>('/api/auth/register', user)
+    }
 
     constructor(private http: HttpClient) {
     }
